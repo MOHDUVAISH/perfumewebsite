@@ -1,0 +1,99 @@
+*{
+  
+}
+
+
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* App.css */
+
+/* Base styles */
+.text-center {
+  text-align: center;
+}
+
+.text-gray-500 {
+  color: #a0aec0; /* Adjust color as needed */
+}
+
+.font-medium {
+  font-weight: 500; /* Adjust font weight as needed */
+}
+
+.leading-tight {
+  line-height: 1.25; /* Adjust line height as needed */
+}
+
+.relative {
+  position: relative; /* Adjust position as needed */
+}
+
+.bottom-3 {
+  bottom: 0.75rem; /* Adjust bottom spacing as needed */
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+  /* Adjust font sizes for small screens */
+  .text-base {
+    font-size: 1rem;
+  }
+
+  .md:text-lg {
+    font-size: 1.125rem;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+  }
+
+  .md:text-base {
+    font-size: 1rem;
+  }
+
+  /* Add margin to the span tag text */
+  .inline-block {
+    margin: 0 5px; /* Adjust margin as needed */
+  }
+}

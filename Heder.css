@@ -1,0 +1,312 @@
+/* Heder.css */
+
+.header {
+  display: flex;
+  background-color: white;
+  color: white;
+}
+
+.header div {
+  border: 1px solid white;
+  text-align: center;
+}
+
+.header div:nth-child(1),
+.header div:nth-child(3) {
+  width: 25%;
+}
+
+.header div:nth-child(2) {
+  width: 50%;
+}
+
+.d3 {
+  padding-left: 130px;
+}
+
+.div1 img {
+  width: 30px;
+  margin: 15px;
+  margin-left: 83px;
+}
+
+.div2 img {
+  width: 255px;
+  margin: 0 auto;
+  margin-top: -10px;
+}
+
+.div3 {
+  display: flex;
+ 
+}
+
+.div3 .d3 {
+  margin-left: 0; /* Adjusted for smaller screens */
+  display: flex;
+
+}
+
+.div3 img {
+  width: 28px;
+  margin: 15px;
+  margin-right: 33px;
+ 
+}
+.d3 .img1 {
+ position: relative;
+ top: 3px;
+ 
+}
+
+
+.low {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: left 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.low.show {
+  left: 0;
+}
+
+/* 
+.nav{
+  display: flex;
+  margin-left: 300px;
+} */
+
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.nav1 {
+  list-style-type: none;
+  display: flex;
+  height: 40px;
+  margin:  0 auto ;
+}
+
+.nav1 li {
+  margin-right: 20px; /* Adjust spacing between list items */
+}
+
+.nav1 a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+  padding-left: 30px;
+  padding-bottom: 10px;
+  padding-top: 40px;
+  position: relative;
+  color: #333; /* Text color */
+
+}
+
+.nav1 a::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  bottom: -2px; /* Adjust line position */
+  width: 90%;
+  margin-left: 15px;
+  height: 2px; /* Line height */
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav1 a:hover::after {
+  background-color: #838080; /* Line color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.l-c {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.nav-f {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 61px
+}
+
+.nav-f li {
+  margin-bottom: 10px;
+  margin-left: -45px;
+}
+
+.nav-f li a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-wrap: wrap;
+    height:50px;
+  }
+
+  .header div {
+    width: 100%;
+    margin-bottom: 20px; /* Adjust as needed */
+  }
+
+  .div1 img {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+  .div2 img {
+    width: 100%; /* Full width for smaller screens */
+    margin-top: -5px;
+    
+ 
+  }
+
+  .nav1{
+      display: none;
+  }
+
+  .d3 {
+    padding-left: 0;
+    margin: 0; /* Reset margin for smaller screens */
+  }
+
+  .d3 .img1,
+  .d3 .img2 {
+    display: none;
+  }
+
+  .div3 {
+    margin-left: 0; /* Reset margin for smaller screens */
+   margin-top: -3px;
+    padding-left: 32px;
+  }
+
+  .div1 img {
+    margin-left: 20px; /* Adjust search icon margin for smaller screens */
+  }
+
+}
+
+
+
+
+  /* Media Queries for Tablet */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+      /* Adjust styles for tablets here */
+      .div2 img {
+          width: 250px; /* Adjust width for tablets */
+      }
+
+      ul.nav-f{
+          margin: 0;
+          padding: 0px;
+          
+      }
+
+      .low{
+          font-size:14px;
+          li{
+              width: 48px;
+              margin: 2px;
+          }
+         
+          
+      }
+
+      .d3  a {
+          margin-left: -90px;
+      }
+      
+      .d3  .img3 {
+          display: none;
+      }
+  }
+
+  /* Media Queries for TV */
+  @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+      /* Adjust styles for TVs here */
+      .header div {
+          font-size: 24px; /* Increase font size for TVs */
+      }
+      
+      .d3  .img3 {
+          display: none;
+      }
+  }
+
+  /* Media Queries for Large Laptops and Desktops */
+  @media only screen and (min-width: 1921px) {
+      /* Adjust styles for large laptops and desktops here */
+      .header div {
+          font-size: 28px; /* Increase font size for larger screens */
+      }
+      
+      .d3  .img3 {
+          display: none;
+      }
+  }
+
+
+/* Heder.css */
+
+/* Your existing styles */
+
+.low {
+  width: 87%;
+  height: 900px;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: left 0.3s ease;
+  background-color:whitesmoke;
+  color: black;
+  z-index: 1000;
+ 
+}
+
+.low.show {
+  left: 0;
+}
+
+/* Your existing styles */
